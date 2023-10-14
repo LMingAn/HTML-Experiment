@@ -1,0 +1,175 @@
+﻿html, body
+{
+    height:100%;
+    margin:0;
+}
+
+
+/* 头部 */
+#head
+{
+    height:10%;
+    min-height:60px;
+    min-width:1250px;
+    background-color:paleturquoise;
+}
+
+
+#head-left
+{
+    height:60px;
+    width:500px;
+    float:left;
+    padding-left:24px;
+    background-color:papayawhip;
+}
+
+
+#head-left>a
+{
+    margin:19px 24px 0px 0px;
+    display:inline-block;/* display属性使外上边距生效 */
+    font:13px/23px Arial,sans-serif;
+    color:#222222;
+    text-decoration:none;
+    float:left;/* 去除a标签之间的空格 */
+}
+
+
+#head-left a:hover
+{
+    color:#4e6ef2;
+}
+
+
+#head-left-more
+{
+    margin:19px 31px 0 0;
+    display:inline-block;/* 使其与其他块一同展示 */
+    position:relative;
+}
+
+
+#head-left-more a
+{
+    display: inline-block; /* display属性使外上边距生效 */
+    font: 13px/23px Arial,sans-serif;
+    color: #222222;
+    text-decoration: none;
+    float: left; /* 去除a标签之间的空格 */
+}
+
+
+#more-div
+{
+    position: absolute;
+    top: 29px;
+    right: -12px;
+    width: 228px;
+    height: 298px;
+    background: #fff;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.15);
+    border-radius: 12px;
+}
+
+
+#head-right
+{
+    height:60px;
+    width:162px;
+    float:right;
+    background-color:aliceblue;
+}
+
+
+/* 主体 */
+#body
+{
+    height:80%;
+    min-height:462px;
+    width:658px;
+    margin:0 auto;/* 实现水平居中 */
+    background-color:pink;
+}
+
+
+/* 搜索框 */
+#search
+{
+    height:44px;
+    background-color:aliceblue;
+}
+
+
+/* 输入框 */
+#search-input
+{
+    height:44px;
+    width:550px;
+    float:left;
+    background-color:plum;
+}
+
+
+#search-input input
+{
+    height:16px;
+    width:443px;
+    border:2px solid #c4c7ce;
+    padding:12px 87px 12px 16px;
+    border-radius:10px 0 0 10px;/* 顺时针方向从上开始 */
+    border-right-color:#4e6ef2;
+    font-size:16px;
+}
+
+
+/* 搜索框伪类 */
+#search-input input:hover
+{
+    border-color:#a7aab5;
+    border-right-color:#4e6ef2;
+}
+#search-input input:focus
+{
+    outline:none;
+    border-color:#4e6ef2;
+}
+
+
+/* 搜索按钮 */
+#search-button
+{
+    height:44px;
+    width:108px;
+    float:left;
+    background-color:palevioletred;
+}
+
+
+#search-button input
+{
+    height:44px;
+    width:108px;
+    border:0;/* 去掉默认边框 */
+    border-radius:0 10px 10px 0;
+    padding:0;
+    background-color:#4e6ef2;
+    font-size:17px;
+    color:#FFFFFF;
+}
+
+
+/* 搜索按钮伪类 */
+#search-button input:hover
+{
+    background-color:#4662d9;
+}
+
+
+#foot
+{
+    height:10%;
+    min-height:60px;
+    min-width:1250px;
+    background-color:blue;
+}
