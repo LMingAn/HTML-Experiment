@@ -48,13 +48,6 @@
 }
 
 
-/* 为父标签设置伪类，控制字标签 */
-#head-left-more:hover #more-div
-{
-    display: block;
-}
-
-
 #head-left-more a
 {
     display: inline-block; /* display属性使外上边距生效 */
@@ -66,18 +59,10 @@
 }
 
 
-#more-div
+/* 为父标签设置伪类，控制字标签 */
+#head-left-more:hover #more-div
 {
-    position: absolute;
-    top: 29px;
-    right: -12px;
-    width: 228px;
-    height: 298px;
-    background: #fff;
-    box-shadow: 0 2px 10px 0 rgba(0,0,0,.15);
-    border-radius: 12px;
-    text-align: center;
-    display: none;
+    display: block;
 }
 
 
