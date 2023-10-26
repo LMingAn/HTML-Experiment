@@ -1,0 +1,414 @@
+﻿body
+{
+    font-family: Helvetica,Tahoma,Arial,Hiragino Sans GB,Hiragino Sans GB W3,Microsoft YaHei,STXihei,STHeiti,Heiti,SimSun,sans-serif;
+    min-width: 960px;
+    background-color: #fff;
+    word-wrap: break-word;
+    margin: 0;
+}
+
+
+a, address, b, blockquote, body, div, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, label, legend, li, ol, p, s, span, table, tbody, td, tfoot, th, thead, tr, ul
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: -apple-system,sans-serif;
+}
+
+
+a
+{
+    text-decoration: none;
+}
+
+ol, ul
+{
+    list-style: none;
+}
+
+
+/* 整页 */
+#index
+{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+
+/* 顶部 */
+.head
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 900;
+    border: 1px solid hsla(0,0%,100%,.08);
+}
+
+
+.head, .top
+{
+    height: 64px;
+}
+
+
+.top a
+{
+    color: #fff;
+}
+
+
+.topleft
+{
+    position: absolute;
+    top: 22px;
+    left: 56px;
+}
+
+
+.logo
+{
+    display: block;
+    width: 45px;
+    overflow: hidden;
+    font-size: 0;
+    background-size: contain;
+}
+
+
+.logo, .topleft_nav
+{
+    float: left;
+    height: 24px;
+}
+
+
+.topleft_nav li a:hover, .topleft_nav li.check a
+{
+    color: #09f;
+    font-weight: 500;
+    opacity: 1;
+}
+
+
+    .topleft_nav li
+{
+    float: left;
+    margin-left: 60px;
+    position: relative;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+.topright
+{
+    position: absolute;
+    top: 22px;
+    right: 56px;
+    display: flex;
+    align-items: center;
+    height: 24px;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #fff;
+}
+
+
+.topright ul
+{
+    display: flex;
+    align-items: center;
+    height: 24px;
+}
+
+
+.topright ul li
+{
+    margin-left: 60px;
+    position: relative;
+    line-height: 24px;
+    color: #fff;
+}
+
+
+#login
+{
+    opacity: 1;
+}
+
+
+/* 主体 */
+.body
+{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+
+.body_img
+{
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+
+.body_img, .body_mask
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.body_mask
+{
+    background: linear-gradient(0deg,rgba(0,0,0,.2),rgba(0,0,0,.2));
+}
+
+
+.body_title
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 234px;
+    margin: 0 auto;
+    font-family: PingFang SC;
+    font-style: normal;
+    text-align: center;
+    z-index: 10;
+}
+
+
+.body_title_txt
+{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 27.4px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.body_title_txt img
+{
+    width: 56.18px;
+    height: 27.4px;
+    margin: 5px;
+}
+
+
+.body_title_btn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 102px;
+    margin: 11px auto 0 auto;
+    border-radius: 37px;
+}
+
+
+.body_title_btn:active, .body_title_btn:hover
+{
+    background-color: rgba(0,0,0,.2);
+}
+
+
+.body_title_btn_txt
+{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #09f;
+}
+
+
+.download
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 3.4vw;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
+.download, .download_area_item
+{
+    height: 11.22vw;
+    display: flex;
+    align-items: center;
+}
+
+
+.download_area
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.download_area_item
+{
+    position: relative;
+    width: 9.52vw;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 1.105vw;
+    border: .085vw solid transparent;
+}
+
+
+.download_area_line
+{
+    content: "";
+    position: relative;
+    margin-bottom: .85vw;
+    width: .085vw;
+    height: 1.53vw;
+    background: #fff;
+    mix-blend-mode: normal;
+    opacity: .1;
+    border-radius: .34vw;
+}
+
+
+.download_area_item_intro
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .85vw;
+}
+
+
+.intro_logo
+{
+    overflow: hidden;
+    position: relative;
+    width: 1.7vw;
+    height: 1.7vw;
+    margin-right: .51vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+
+.intro_txt
+{
+    position: relative;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.19vw;
+    line-height: 1.7vw;
+    color: #fff;
+}
+
+
+/* 底部 */
+.foot
+{
+    width: 100%;
+    height: 206px;
+    position: relative;
+    flex-direction: column;
+}
+
+
+.foot, .foot_links
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.foot_links
+{
+    flex-direction: row;
+}
+
+
+.links_item
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.item_txt
+{
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #000;
+    opacity: .4;
+}
+
+
+.item_line
+{
+    content: "";
+    position: relative;
+    width: 1px;
+    height: 12px;
+    margin: 0 10px;
+    background: #000;
+    opacity: .2;
+    mix-blend-mode: normal;
+    border-radius: 4px;
+}
+
+
+.foot_copend
+{
+    margin-top: 16px;
+}
+
+
+.foot_coptxt
+{
+    margin-top: 12px;
+}
+
+
+.foot_copend, .foot_coptxt
+{
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #000;
+    opacity: .4;
+}
