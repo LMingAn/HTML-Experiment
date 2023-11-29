@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>动态九九乘法表</title>
+    <script type="text/javascript">
+        var a = 1, b = 1;
+        function show() {
+            a == 1 && document.write("<table style='border: 1px solid; border-collapse: collapse;'>");
+            b == 1 && document.write("<tr>");
+            document.write("<td style='border: 1px solid;'>" + a + '*' + b + '=' + a * b + "</td>");
+            if (a == b) {
+                document.write("</tr>");
+                a++;
+                b = 1;
+            }
+            else
+                b++;
+            if (a == 10) {
+                document.write("</table>");
+                document.write("<style>td{background-color: lightblue;}</style>");
+                clearInterval(timer);
+            }
+        }
+    </script>
+</head >
+<body >
+    <div>
+        <button id="btn">动态显示九九乘法表</button>
+    </div>
+    <script>
+        var btn = document.getElementById("btn");
+        btn.onclick = function () { timer = setInterval(show, 100) };
+    </script>
+</body >
+</html >

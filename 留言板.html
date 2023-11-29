@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>留言板</title>
+    <script>
+        var messages = [];
+        function leaveMsg() {
+            var name = document.getElementById("name").value;
+            var msg = document.getElementById("msg").value;
+            if (name == "" || msg == "") {
+                alert("你输入的信息不完整!");
+                return false;
+            }
+            var temp_msg = "[" + name + "]在" + new Date().toLocaleTimeString() + "说:" + msg;
+            if (messages.length >= 10) {
+                messages.pop();
+            }
+            messages.unshift(temp_msg);
+            document.getElementById("message").value = messages.join("\n");
+        }	
+    </script>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>姓名：</td>
+                <td><input type="text" id="name" /></td>
+            </tr>
+            <tr>
+                <td>留言：</td>
+                <td><textarea id="msg" cols="30" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="reset" />
+                    <input type="button" onclick="leaveMsg()" value="留言" />
+                </td>
+            </tr>
+        </table>
+    </form>
+    <hr />
+    <textarea id="message" cols="50" rows="10" disabled="disabled"></textarea>
+
+</body>
+</html>

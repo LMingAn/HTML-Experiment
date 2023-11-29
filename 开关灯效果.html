@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>开关灯</title>
+</head>
+<body>
+    <script>
+			function changeImage() {
+				element = document.getElementById('myimage')
+				x = document.getElementById("demo");
+				if (element.src.match("off")) {
+					element.src = "实验素材/on.jpg";
+					x.innerHTML = "灯亮了!";
+					x.style.color="red";
+				} else {
+					element.src = "实验素材/off.jpg";
+					x.innerHTML = "灯灭了!";
+					x.style.color="black";
+				}
+			}
+    </script>
+    <div class="con">
+        <img id="myimage" style="margin: 0 0 0 750px" onclick="changeImage()" src="实验素材/off.jpg">
+        <h2 id="demo" align="center">点击开/关灯</h2>
+    </div>
+
+</body>
+</html>

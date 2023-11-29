@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>随机彩灯</title>
+    <script>
+        function fun() {
+            var n = document.getElementById("num").value;
+            var cdf = document.createDocumentFragment();
+            for (var i = 0; i < n; i++) {
+                var imgNode = document.createElement("img");
+                imgNode.setAttribute("src", "实验素材/off.png");
+                imgNode.setAttribute("width", "100px");
+                cdf.appendChild(imgNode);
+            }
+            document.body.appendChild(cdf);
+            blink();
+        }
+
+        function blink() {
+            var imageArray = document.getElementsByTagName("img");
+            for (var i = 0; i < imageArray.length; i++) {
+                if (Math.random() - 0.5 <= 0) {
+                    imageArray[i].src = "实验素材/off.png"
+                } else {
+                    imageArray[i].src = "实验素材/on.png"
+                }
+            }
+            setTimeout(blink, 1000);
+        }
+
+        function clearImg() {
+            var imgs = document.getElementsByTagName("img");
+            for (var i = imgs.length - 1; i >= 0; i--) {
+                imgs[i].parentNode.removeChild(imgs[i]);
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="number" id="num" />
+    <button onclick="fun()">生成</button>
+    <button onclick="clearImg()">清除</button>
+    <hr />
+</body>
+</html>

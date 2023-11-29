@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>多彩时钟</title>
+    <style>
+        #bg {
+            background-image: url(实验素材/time.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 400px;
+            width: 400px;
+            position: absolute;
+            left: 50%;
+            margin-left: -200px;
+        }
+
+        #txt {
+            font-family: "微软雅黑";
+            font-size: 50px;
+            line-height: 100px;
+            position: absolute;
+            top: 200px;
+            width: 400px;
+            margin-top: -50px;
+            text-align: center;
+
+        }
+    </style>
+    <script>
+        function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+            setTimeout('startTime()', 300);
+        }
+
+        function checkTime(i) {
+            if (i < 10) {
+                i = "0" + i;
+            }
+            return i;
+        }
+
+        function turncolors() {
+            r = Math.floor(Math.random() * 256).toString(16);
+            g = Math.floor(Math.random() * 256).toString(16);
+            b = Math.floor(Math.random() * 256).toString(16);
+            color = "#" + r + g + b;
+            document.getElementById('txt').style.color = color;
+            setTimeout('turncolors()', 300);
+        }
+    </script>
+</head>
+<body onload="startTime(),turncolors()">
+    <div id="bg">
+        <div id="txt"></div>
+    </div>
+</body>
+</html>
