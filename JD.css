@@ -1,0 +1,398 @@
+﻿*
+{
+    padding: 0;
+    margin: 0;
+}
+
+
+body
+{
+    font: 12px Microsoft Yahei;
+    color: #666;
+    background-color: #f4f4f4;
+}
+
+
+li
+{
+    list-style: none;
+}
+
+
+a
+{
+    text-decoration: none;
+}
+
+
+/*    头部    */
+
+/*  顶端  */
+.top {
+    background: #e3e4e5;
+    border-bottom: 1px solid #ddd;
+}
+
+.top li
+{
+    float: left;
+}
+
+.top a
+{
+    color: #999;
+}
+
+.top_in
+{
+    width: 1200px;
+    height: 30px;
+    line-height: 30px;
+    color: #999;
+    margin: auto;
+}
+
+.tl
+{
+    float: left;
+}
+
+.location
+{
+    position: relative;
+}
+
+.area
+{
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.icon
+{
+    font-size: 14px;
+    color: red;
+    margin-right: 4px;
+}
+
+.entrance
+{
+    top: 1px;
+}
+
+.entry
+{
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.tr
+{
+    float: right;
+}
+
+.login
+{
+    margin-right: 8px;
+}
+
+.other
+{
+    margin: 0 8px;
+}
+
+.part
+{
+    margin: 11px 5px 0;
+    width: 1px;
+    height: 10px;
+    background-color: #ccc;
+}
+
+/*  中部  */
+.middle
+{
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.middle_in
+{
+    width: 1200px;
+    height: 140px;
+    margin: auto;
+}
+
+.logo
+{
+    width: 190px;
+    height: 120px;
+    position: relative;
+    top: 10px;
+}
+
+.logo_img
+{
+    width: 190px;
+    height: 120px;
+    margin: 0 auto;
+}
+
+.search
+{
+    width: 550px;
+    height: 30px;
+    top: 55px;
+    left: 500px;
+    border: 2px solid red;
+    position: absolute;
+}
+
+.search_bg
+{
+    width: 420px;
+    height: 25px;
+    line-height: 25px;
+    padding: 2px 44px 2px 17px;
+    border: 1px solid transparent;
+    font-size: 12px;
+    background: transparent;
+    outline: none;
+}
+
+.search_bt
+{
+    width: 65px;
+    height: 30px;
+    right: 0;
+    border: none;
+    position: absolute;
+    background: red;
+    outline: none;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.search_bt_in
+{
+    color: white;
+}
+
+.shopcart
+{
+    width: 130px;
+    height: 34px;
+    left: 1100px;
+    top: 55px;
+    position: absolute;
+    text-align: center;
+    line-height: 34px;
+    border: 1px solid #e3e4e5;
+}
+
+.shopcart a
+{
+    color: red;
+}
+
+.hotwords
+{
+    width: 550px;
+    height: 20px;
+    position: absolute;
+    left: 500px;
+    top: 95px;
+    line-height: 20px;
+}
+
+.hotwords a
+{
+    float: left;
+    margin-right: 10px;
+    color: #999;
+}
+
+.hotwords .hotword
+{
+    color: red;
+}
+
+.navitems
+{
+    width: 800px;
+    height: 40px;
+    position: absolute;
+    left: 450px;
+    top: 110px;
+    padding-top: 20px;
+}
+
+.navitems ul
+{
+    float: left;
+}
+
+.navitems li
+{
+    float: left;
+    margin-left: 1px;
+}
+
+.navitems a
+{
+    line-height: 40px;
+    font-size: 15px;
+    color: black;
+    margin: 0 11px;
+}
+
+#time
+{
+    width: 200px;
+    height: 100px;
+    font-size: 22px;
+    font-family: 'Microsoft YaHei';
+    color: #999;
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    top: 55px;
+    right: 232px;
+}
+
+
+/*    主要内容    */
+
+.index
+{
+    width: 1200px;
+    height: 480px;
+    margin-bottom: 30px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+}
+
+/*  左  */
+.index_left
+{
+    width: 190px;
+    height: 480px;
+    float: left;
+    margin-right: 10px;
+}
+
+.menu
+{
+    height: 450px;
+    padding: 10px 0;
+    margin-top: 10px;
+    color: #636363;
+    background-color: #fefefe;
+}
+
+.menu_item
+{
+    height: 25px;
+    padding-left: 18px;
+    font-size: 0;
+    line-height: 25px;
+}
+
+.menu_item:hover
+{
+    background-color: #d9d9d9;
+}
+
+.menu_item_in
+{
+    font-size: 14px;
+    color: #333;
+}
+
+.menu_item_line
+{
+    padding: 0 2px;
+    font-size: 12px;
+}
+
+/*  中  */
+.index_middle
+{
+    width: 790px;
+    height: 470px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.index_middle_img
+{
+    width: 790px;
+    height: 470px;
+}
+
+/*  右  */
+.index_right
+{
+    width: 190px;
+    height: 480px;
+    float: right;
+}
+
+.index_right_img
+{
+    width: 190px;
+    height: 470px;
+    margin-top: 10px;
+}
+
+
+/*    秒杀    */
+.kill
+{
+    height: 260px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.kill_in
+{
+    width: 1200px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+}
+
+.kill_in_left
+{
+    width: 190px;
+    height: 260px;
+}
+
+.kill_in_img
+{
+    width: 190px;
+    height: 260px;
+}
+
+.killitem_img
+{
+    width: 800px;
+    height: 260px;
+}
+
+
+/*    底部    */
+.foot
+{
+    width: 100%;
+    height: 100%;
+}
+
+.foot_img
+{
+    width: 1200px;
+    height: 100%;
+    margin-left: 242px;
+}
